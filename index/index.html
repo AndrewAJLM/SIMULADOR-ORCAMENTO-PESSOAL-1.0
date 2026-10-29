@@ -12,44 +12,67 @@
             <h2>Calcule quanto gasta e quanto sobra por mês</h2>
 
         
-        <div class="inputs">
-            <label for="">Salário bruto</label>
-            <input type="text" name="" id="">
-            <label for="">Aluguel</label>
-            <input type="text" name="" id="">
-            <label for="">Alimentação</label>
-            <input type="text" name="" id="">
+        <div class="inputs" id="inputsid">
+            <label for="salarioid">Salário bruto</label>
+            <div class="inputparent">
+                <input type="number" name="" id="salarioid">
+                <p class="avisosinp" id="avisosalid">O valor precisa ser maior que zero</p>
+            </div>
+
+            <label for="aluguelid">Aluguel</label>
+            <div class="inputparent">
+                <input type="number" name="" id="aluguelid">
+                <p class="avisosinp" id="avisoalugid">O valor precisa ser maior que zero</p>
+            </div>
+            
+            
+            
+            <label for="alimentacaoid">Alimentação</label>
+            <div class="inputparent">
+                <input type="number" name="" id="alimentacaoid">
+                <p class="avisosinp" id="avisoaliid"> O valor precisa ser maior que zero</p>
+            </div>
+            
+            <label for="reservaid">Reserva</label>
+            <div class="inputparent">
+                <input type="number" name="" id="reservaid">
+                <p class="avisosinp" id="avisoresid">O valor precisa ser maior que zero</p>
+            </div>   
+        </div>
+        <div class="botaoAdd">
             <h3>Adicionar um novo gasto mensal:</h3>
             <div class="add" id="addid"><div class="elementoplus"></div></div>
         </div>
+
+
         </div>
         <div class="resultado">
             <div class="mesesReserva">
                 <p>Sua reserva garante </p>
-                <p class="resultadoMeses">0</p>
+                <p class="resultadoMeses" id="mesesid">0</p>
                 <p >meses.</p>
             </div>
             
             <div class="saldo margins">
                 <p>Saldo previsto:</p>
-                <p class="saldoP">0</p>
+                <p class="saldoP" id="saldoPid">0</p>
             </div>
 
-            <div class="avisoD aviso margins">
+            <div class="avisoD aviso margins" id="avisoDid">
                 <h2 class="defit">Seu saldo está negativo!</h2>
                 <p class="avisoDefit">Parece que você ultrapassou o limite de gastos do mês. Tente remover alguns gastos para voltar ao saldo positivo</p>
             </div>
 
-            <div class="avisoP aviso margins">
+            <div class="avisoP aviso margins" id="avisoPid">
                 <h2 class="positivo">Seu saldo está positivo!</h2>
-                <p class="avisoDefit">Seu saldo tende a crescer mês a mês. Continue assim e em 1 ano terá uma boa reserva. Se possível, corte mais alguns gastos, seu patrimônio vai crescer ainda mais!</p>
+                <p class="avisoPositivo">Seu saldo tende a crescer mês a mês. Continue assim e em 1 ano terá uma boa reserva. Se possível, corte mais alguns gastos, seu patrimônio vai crescer ainda mais!</p>
             </div>
             
-            
         </div>
-        
-        
     </div>
+
+    <script src="../Scripts/calculo.js"></script>
+    <script src="../Scripts/script.js"></script>
 </body>
 </html>
 

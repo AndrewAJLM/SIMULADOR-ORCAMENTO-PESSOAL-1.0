@@ -49,7 +49,6 @@
     margin-bottom: 10px;
 }
 
-
 .calculadora h3 {
 
     color: #2f4858;
@@ -62,11 +61,42 @@
 
     width: 500px;
     height: max-content;
+    max-height: 300px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    scrollbar-color: rgba(255, 255, 255, 0.568) rgba(0, 0, 0, 0);
     
 }
 
+
+.inputProp {
+
+    width: 200px;
+    height: 100px;
+}
+
+.inputparent {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.avisosinp {
+
+    display: none;
+    color: red;
+    font-weight: 500;
+    margin-left: 20px;
+    opacity: 0.7;
+}
+
+.avisoinpativo {
+
+    display: block;
+}
 
 .calculadora .inputs input {
 
@@ -121,11 +151,15 @@
 
     grid-area: resultado;
     width: 100%;
+    min-height: max-content;
     height: 100%;
+    max-height: 500px;
     background-color: #ffffff46;
     border-radius: 2.5rem;
     display: flex;
     flex-direction: column;
+    justify-self: start;
+    align-self: start;
     
 }
 
@@ -207,4 +241,17 @@
     color: #466AEF;
 }
 
+.negative {
+    
+    color: red;
+}
 
+.positive {
+
+    color: #466AEF;
+}
+
+.zero {
+
+    color: white;
+}
